@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item1 {
+    grid-area: a;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.item2 {
+    grid-area: b;
+    background-color: hsl(184, 100%, 22%);
+}
+.item3 {
+    grid-area: c;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+main {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas: 
+    'a b c';
+}
+
+main > * {
+    flex: 1;
+    padding: 40px;
+}
+
+h3 {
+    padding: 10px 0 10px 0;
+}
+p {
+    padding: 0 0 80px 0;
+}
+button {
+    position: absolute;
+    bottom: 5%;
+}
+
+.btn1 {
+    color:hsl(31, 77%, 52%);
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+.btn1:hover {
+    color: whitesmoke;
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid whitesmoke;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: hsl(184, 100%, 22%);
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+.btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.btn3 {
+    color: hsl(179, 100%, 13%);
+    background-color: whitesmoke;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+}
+.btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+
